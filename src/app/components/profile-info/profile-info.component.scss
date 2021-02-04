@@ -1,0 +1,46 @@
+.info-container {
+    padding: 30px 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    &__avatar {
+        width: 35%;
+        justify-content: center;
+        display: flex;
+        padding: 0px 20px 20px 0px;
+    }
+
+    &__info {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+.avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.username {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &__name {
+        font-size: 26px;
+        font-weight: 200;
+    }
+
+    &__button {
+        margin: 0px 20px;
+    }
+}
+
+.citate {
+    font-size: 16px;
+}

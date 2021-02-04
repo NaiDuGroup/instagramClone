@@ -1,0 +1,24 @@
+<div class="header-content">
+<div class="header">
+    <div class="header__element">
+        <img src="../../../assets/images/instagramLogo.png">
+    </div>
+    <div class="header__element">
+        <mat-form-field class="search-field">
+            <input matInput type="text" placeholder="Search" [(ngModel)]="value">
+            <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+    </div>
+    <div class="header__element">
+        <div class="buttons">
+            <mat-icon>home</mat-icon>
+            <mat-icon class="buttons__elm">message</mat-icon>
+            <mat-icon class="buttons__elm">map</mat-icon>
+            <mat-icon class="buttons__elm">favorite_border</mat-icon>
+            <mat-icon class="buttons__elm">account_circle</mat-icon>
+        </div>
+    </div>
+</div>
+</div>
