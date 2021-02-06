@@ -1,26 +1,28 @@
 .header-content {
-    border-bottom: 1px solid grey;
+  border-bottom: 1px solid #d9d9d9;
 }
-.header {
-    width: 954px;
-    height: 54px;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
 
-    &__element {
-        width: 33%;
-    }
-}
-.search-field {
-    width: 100%;
+.header {
+  width: 954px;
+  height: 54px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+
+  &__element {
+    width: 33%;
   }
+}
+
+.search-field {
+  width: 100%;
+}
 
 .buttons {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 
-    &__elm {
-        padding-left: 20px;
-    }
+  &__elm {
+    padding-left: 20px;
+  }
 }

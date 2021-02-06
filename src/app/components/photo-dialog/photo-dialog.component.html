@@ -1,0 +1,55 @@
+<div *ngIf="photo$ | async as photo" class="dialog-container">
+  <div class="dialog-container__photo">
+    <img class="image-full" src={{photo.urls.small}}>
+  </div>
+  <div class="dialog-container__description">
+    <div class="dialog-container__description__profile">
+      <div class="profile-cont">
+        <div class="profile">
+          <img class="profile__img" src="../../../assets/images/ava.jpg">
+          <span class="profile__username">dunai_</span>
+        </div>
+        <div>
+          <mat-icon>more_horiz</mat-icon>
+        </div>
+      </div>
+    </div>
+    <div class="dialog-container__description__desc">
+      <div class="description-cont">
+        <img class="profile__img" src="../../../assets/images/ava.jpg">
+        <div class="description-cont__photo_desc">
+          <span class="username">dunai_ </span>
+          <span>{{photo.alt_description}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="dialog-container__description__like">
+      <div class="like">
+        <div class="panel">
+          <div>
+            <mat-icon>favorite_border</mat-icon>
+            <mat-icon class="icon">chat_bubble_outline</mat-icon>
+            <mat-icon class="icon">mail_outline</mat-icon>
+          </div>
+          <div>
+            <mat-icon>turned_in_not</mat-icon>
+          </div>
+        </div>
+        <div class="liked">
+          <img class="img" src="../../../assets/images/ava.jpg">
+          <span class="liked__text">Liked by <strong>v_kassir</strong> and <strong>69 others</strong></span>
+        </div>
+        <div>
+          <span class="date">DECEMBER 1, 2019</span>
+        </div>
+      </div>
+    </div>
+    <div class="dialog-container__description__comment">
+      <div class="comment">
+        <mat-icon> insert_emoticon</mat-icon>
+        <input matInput type="text" placeholder="Add a comment..." class="text">
+        <button mat-button color="primary">Post</button>
+      </div>
+    </div>
+  </div>
+</div>

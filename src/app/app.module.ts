@@ -9,10 +9,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
 import { 
   HeaderComponent,
   ProfileInfoComponent,
-  ProfilePhotoListComponent
+  ProfilePhotoListComponent,
+  PhotoDialogComponent,
+  DummyComponent
 } from './components';
 import { PhotoHttpService } from './servicies';
 
@@ -22,7 +25,9 @@ import { PhotoHttpService } from './servicies';
     AppComponent,
     HeaderComponent,
     ProfileInfoComponent,
-    ProfilePhotoListComponent
+    ProfilePhotoListComponent,
+    PhotoDialogComponent,
+    DummyComponent
   ],
   imports: [
     HttpClientModule,
@@ -31,6 +36,7 @@ import { PhotoHttpService } from './servicies';
     BrowserAnimationsModule,
     MatButtonModule,
     MatInputModule,
+    MatDialogModule,
     MatIconModule,
     FormsModule,
   ],

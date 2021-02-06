@@ -1,6 +1,7 @@
-
-<div  *ngIf="photos$ | async as photos" class="list-container" >
-<div *ngFor="let photo of photos" >
-    <img class="list-container__user-image" src= {{photo.urls.small}}>
-</div>
+<div *ngIf="photos$ | async as photos" class="list-container">
+  <div *ngFor="let photo of photos">
+    <a routerLink="/{{photo.id}}">
+      <img class="list-container__user-image" src={{photo.urls.small}}>
+    </a>
+  </div>
 </div>
