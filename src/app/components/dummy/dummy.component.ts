@@ -32,7 +32,6 @@ export class DummyComponent implements OnInit {
         });
 
         this.currDialog.afterClosed().subscribe(result => {
-          console.log('The dialog was closed');
           router.navigateByUrl('/');
         })
       }
